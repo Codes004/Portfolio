@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ebuka portfolio</title>
+        <!-- Include necessary meta tags and CSS/JS links -->
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+    
+    <!-- Core css -->
+    <style>
+        .bold{
+            font-size: 24px;
+            line-height: 120%;
+            font-weight: 700;
+            color: #3c2e61;
+            margin-top: 25px;
+            /* margin-bottom: 15px; */
+        }
+        .text{
+            /* font-size: 24px; */
+            line-height: 120%;
+            font-weight: 700;
+            color: #2F1C6A;
+            margin-top: 25px;
+            /* margin-bottom: 15px; */
+        }
+        .h3volo{
+            font-size: 24px;
+            line-height: 120%;
+            font-weight: 700;
+            color: #8c75d1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        .font{
+            /* font-size: 24px; */
+            line-height: 120%;
+            font-weight: 700;
+            color: #463d5fd5;
+            margin-top: 25px; 
+        }
+        .text-dark12{
+            color: black;
+        }
+        .texture{
+          color: var(--bs-heading-color);
+          font-weight: 600;
+          line-height: 1.4;
+          margin-bottom: .5rem;
+          margin-top: 0;
+          color: rgb(56, 70, 87);
+        }
+        .texture12{
+          font-weight: 600;
+          line-height: 1.4;
+          /* margin-bottom: .5rem; */
+          margin-top: 0;
+          color: #8c75d1;
+        }
+        .text-prim{
+          color: #8c75d1;
+        }
+        .col-lg-4{
+          column-gap:1em;
+        }
+        .hover:hover{
+          box-shadow: 4px 4px 8px;
+          transform: scale(1.01);
+          transition: 1.2s;
+          
+        }
+        .h3volo2{
+            /* font-size: 24px; */
+            line-height: 120%;
+            font-weight: 700;
+            color: #8c75d1;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            
+        }
+        .bg-dangerr{
+          background-color: rgba(184, 100, 100, 0.493);
+          
+        }
+        .alink{
+          text-decoration: none;
+          font-size: 18px;
+          color: rgb(216, 47, 47);
+        }
+        .alink:hover{
+          color: rgb(216, 47, 47);
+          .arrow-move{
+            transform: translateX(8px);
+            transition: 1.4s;
+          }
+        }
+        .blur{
+          filter:blur(0.4px);
+        }
+        .bg-primaryy{
+          background-color: rgba(142, 173, 230, 0.438);
+          margin-top: 2em;
+        }
+        .alink-react{
+          text-decoration: none;
+          font-size: 18px;
+          color:cornflowerblue; 
+        }
+        .alink-react:hover{
+          color:cornflowerblue;
+          .arrow-move{
+            transform: translateX(8px);
+            transition: 1.4s;
+          }
+        }
+        .bg-warningg{
+          background-color: rgba(236, 217, 192, 0.767);
+        }
+        .bg-successs{
+          background-color: rgba(46, 139, 86, 0.336);
+          margin-top: 2em;
+        }
+        .alink-nodejs{
+          color:darkgreen;
+          text-decoration: none;
+        }
+        .alink-nodejs:hover{
+          color:darkgreen ;
+          .arrow-move{
+            transform: translateX(8px);
+            transition: 1.4s;
+          }
+        }
+        .primary{
+          background-color:#6952adf3;
+          font-weight: 700;
+          color: white;
+        }
+        .primary:hover{
+          background-color:#5c4899f3;
+          font-weight: 700;
+          /* color:  #4d25a1; */
+          color: white;
+        }
+        .font-text{
+          line-height: 120%;
+            font-weight: 600;
+            color: #463d5fd5;
+            /* margin-top: 25px;  */
+        }
+        body{
+            line-height: 120%;
+            font-weight: 600;
+            color: #463d5fd5;
+        }
+        .mailto{
+          color: #463d5fd5;
+          text-decoration: none;
+        }
+        .btn-color{
+          background-color:#7869a5f3;
+        }
+        .btn-colory:hover{
+          background-color: red;
+          color: white;
+        }
+        .btn-colort:hover{
+          background-color: rgb(71, 178, 221);
+          color: white;
+        }
+        .btn-colorl:hover{
+          background-color: rgb(47, 95, 185);
+          color: white;
+        }
+        .writing{
+          color: #4d3b80;
+        }
+        .bg-color{
+          background-color: rgba(135, 33, 231, 0.842);
+          color: white;
+        }
+        .imgtop{
+          margin-top: -5em;
+        }
+        @media (max-width:600px) {
+          .imgtop{
+          margin-top: -2em;
+        }
+        }
+        .link{
+          text-decoration: none;
+          font-size: 15px;
+        }
+        .tex{
+          color: #937fcf;
+        }
+    </style>
+</head>
+<body class="">
+
+  <main>
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none;color:white;">
+      <symbol id="bootstrap" viewBox="0 0 118 94">
+        <title>Bootstrap</title>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
+      </symbol>
+      <symbol id="home" viewBox="0 0 16 16">
+        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5z"/>
+      </symbol>
+      <symbol id="speedometer2" viewBox="0 0 16 16">
+        <path d="M8 4a.5.5 0 0 1 .5.5V6a.5.5 0 0 1-1 0V4.5A.5.5 0 0 1 8 4zM3.732 5.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 10a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 10zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 9.31a.91.91 0 1 0 1.302 1.258l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+        <path fill-rule="evenodd" d="M0 10a8 8 0 1 1 15.547 2.661c-.442 1.253-1.845 1.602-2.932 1.25C11.309 13.488 9.475 13 8 13c-1.474 0-3.31.488-4.615.911-1.087.352-2.49.003-2.932-1.25A7.988 7.988 0 0 1 0 10zm8-7a7 7 0 0 0-6.603 9.329c.203.575.923.876 1.68.63C4.397 12.533 6.358 12 8 12s3.604.532 4.923.96c.757.245 1.477-.056 1.68-.631A7 7 0 0 0 8 3z"/>
+      </symbol>
+      <symbol id="table" viewBox="0 0 16 16">
+        <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4V4H6zm4 4H6v3h4V8z"/>
+      </symbol>
+      <symbol id="people-circle" viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+      </symbol>
+      <symbol id="grid" viewBox="0 0 16 16">
+        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5v-3zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5v-3zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+      </symbol>
+      <symbol id="collection" viewBox="0 0 16 16">
+        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-11zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1h-7zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zm1.5.5A.5.5 0 0 1 1 13V6a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13z"/>
+      </symbol>
+      <symbol id="calendar3" viewBox="0 0 16 16">
+        <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+        <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+      </symbol>
+      <symbol id="chat-quote-fill" viewBox="0 0 16 16">
+        <path d="M16 8c0 3.866-3.582 7-8 7a9.06 9.06 0 0 1-2.347-.306c-.584.296-1.925.864-4.181 1.234-.2.032-.352-.176-.273-.362.354-.836.674-1.95.77-2.966C.744 11.37 0 9.76 0 8c0-3.866 3.582-7 8-7s8 3.134 8 7zM7.194 6.766a1.688 1.688 0 0 0-.227-.272 1.467 1.467 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 5.734 6C4.776 6 4 6.746 4 7.667c0 .92.776 1.666 1.734 1.666.343 0 .662-.095.931-.26-.137.389-.39.804-.81 1.22a.405.405 0 0 0 .011.59c.173.16.447.155.614-.01 1.334-1.329 1.37-2.758.941-3.706a2.461 2.461 0 0 0-.227-.4zM11 9.073c-.136.389-.39.804-.81 1.22a.405.405 0 0 0 .012.59c.172.16.446.155.613-.01 1.334-1.329 1.37-2.758.942-3.706a2.466 2.466 0 0 0-.228-.4 1.686 1.686 0 0 0-.227-.273 1.466 1.466 0 0 0-.469-.324l-.008-.004A1.785 1.785 0 0 0 10.07 6c-.957 0-1.734.746-1.734 1.667 0 .92.777 1.666 1.734 1.666.343 0 .662-.095.931-.26z"/>
+      </symbol>
+      <symbol id="cpu-fill" viewBox="0 0 16 16">
+        <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z"/>
+        <path d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z"/>
+      </symbol>
+      <symbol id="gear-fill" viewBox="0 0 16 16">
+        <path d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z"/>
+      </symbol>
+      <symbol id="speedometer" viewBox="0 0 16 16">
+        <path d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z"/>
+        <path fill-rule="evenodd" d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z"/>
+      </symbol>
+      <symbol id="toggles2" viewBox="0 0 16 16">
+        <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z"/>
+        <path d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z"/>
+        <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z"/>
+      </symbol>
+      <symbol id="tools" viewBox="0 0 16 16" class="text-white">
+        <path d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z"/>
+      </symbol>
+      <symbol id="chevron-right" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+      </symbol>
+      <symbol id="geo-fill" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z"/>
+      </symbol>
+    </svg>
+  </main>
+
+    <section>
+        <nav class="navbar navbar-expand-lg bg-colo container  border-bottom">
+            <div class="container-fluid container">
+              <a class="navbar-brand" href="#">
+                <!-- <img src="Ashely_logo.png" alt="Logo" width="50" height="40" class="d-inline-block align-text-top"> -->
+               <span class="ashely">A</span><span class="ace">CE.</span>
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end me-5" id="navbarNav">
+                <ul class="navbar-nav d-flex">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link ">Contact</a>
+                  </li>
+                </ul>
+              </div>
+          
+            </div>
+          </nav>
+    </section>
+
+   <section>
+    <div class="container-fluid">
+       <div class="row p-lg-5 p-md-3 mb-5 bg-color">
+         <div class="col-12 p-lg-5 p-md-0 mt-5 text-center">
+          <h4>Hi there, my name is</h4>
+          <h1 class="fs-1 fw-bold">Lee Robinson</h1>
+          <h4 class="mt-4 mb-5">I'm the VP of Developer Experience at Vercel where my team helps developers build a faster web. I'm an advisor and investor in early stage startups.</h4>
+         </div>
+
+       </div>
+       <div class="col-12 text-center imgtop">
+        <img src="profile.jpg" width="210" height="210" style="border: solid white 5px;" class="rounded-circle" alt="">
+       </div>
+    </div>
+   </section>
+
+   <section>
+    <div  class="container  mt-5">
+        <div  class="text-center">
+            <p class="text-muted fs-6 text">PORTFOLIO</p>
+
+            <h1 class="h-3 bold">Handful of items from</h1>
+            <h3 class="h3volo">my portfolio.</h3>
+            <p class="font">Here are a handful of items from my portfolio over the <span class="text-dark12">last 3 years.</span></p>
+        </div>
+    </div>
+
+    <!-- cards -->
+    <div class="container text-center p-4">
+        <div class="row g-3 mt-lg-5 mt-0">
+            <div class="col-lg col-md-12 hover rounded-3 shadow p-3  me-4">
+                <h5 class="text-start texture">JAMstack & Headless web development agency</h5>
+                <div class="d-flex mt-4 mb-4">
+                  <p class="rounded-3 border p-1 texture12 btn-sm btn-outline-dark rounded-3 me-2 text-prim">Figma</p>
+                  <p class="rounded-3 border p-1 btn-sm btn-outline-dark rounded-3 texture12 text-prim">Bootstrap</p>
+                </div>
+
+                <img src="web image.png" class="img-fluid " alt="">
+            </div>
+
+            <div class="col-lg col-md-12 hover rounded-3 shadow p-3  me-4">
+                <h5 class="text-start texture">Banking and Finance landing page design</h5>
+                <div class="d-flex mt-4 mb-4">
+                  <p class="rounded-3 border p-1 texture12 btn-sm btn-outline-dark rounded-3 me-2 text-prim">UI Design</p>
+                  <p class="rounded-3 border p-1 btn-sm btn-outline-dark rounded-3 texture12 text-prim">Next.js</p>
+                </div>
+                <img src="web image.png" class="img-fluid " alt="">
+            </div>
+
+            <div class="col-lg col-md-12 hover rounded-3 shadow p-3 ">
+               <h5 class="text-start texture"> Accounting software web app development</h5>
+               <div class="d-flex mt-4 mb-4">
+                <p class="rounded-3 border p-1 texture12 btn-sm btn-outline-dark rounded-3 me-2 text-prim">Web Development</p>
+                <p class="rounded-3 border p-1 btn-sm btn-outline-dark rounded-3 texture12 text-prim">React JS</p>
+              </div>
+              <img src="web image.png" class="img-fluid " alt="">
+            </div>
+        </div>
+
+    </div>
+   </section>
+<!-- 
+   <section>
+    <div class="container mt-5">
+      <div class="row">
+        <div class="col">
+          <div class="p-5">
+            <p class="text text-muted">MY SKILLS</p>
+            <h3 class="fw-bold">My areas of <span class="h3volo2">expertise</span></h3>
+            <p class="col-8">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis elit interdum. Duis mollis, ligula magna mollis.</p>
+          </div>
+        </div>
+  
+        <div class="col p-4">
+          <div class="row g-4">
+            <div class="col-6 rounded-3 bg-dangerr">
+              <h4 class="text mt-5 blur">HTML & CSS</h4>
+              <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+              <a href="" class="alink"><p>Link text</p></a>
+            </div>
+  
+            <div class="col-6 rounded-3 bg-dangerr">
+              <h4 class="text mt-5 blur">HTML & CSS</h4>
+              <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section>
+    <div class="container mt-lg-5 mt-md-3">
+      <div class="row">
+        <!-- Left Column -->
+        <div class="col-md-5">
+          <div class="p-5 pb-1 mt-lg-5 mt-0">
+            <div class="mt-lg-5 mt-0">
+              <p class="text text-muted ">MY SKILLS</p>
+            <h3 class="fw-bold">My areas of <span class="h3volo2">expertise</span></h3>
+            <p class="col-11 ">Nullam quis risus eget urna mollis ornare vel eu leo. Maecenas faucibus mollis elit interdum. Duis mollis, ligula magna mollis.</p>
+            <button class="btn primary">View more details</button>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Right Column -->
+        <div class="col-md-7">
+          <div class="p-4">
+            <div class="row">
+              <!-- Four Columns Inside Right Column -->
+              <div class="col-md-6">
+                <div class="rounded-3 bg-dangerr p-3 mb-3">
+                  <img src="html5.png" width="50" class="img-fluid" alt="">
+                  <h5 class="text mt-3">HTML & CSS</h5>
+                  <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+                  <a href="#" class="alink">Link text <i class="fa-solid fa-arrow-right arrow-move"></i></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="rounded-3 bg-primaryy p-3 mb-3">
+                  <img src="React.png" width="50" class="img-fluid" alt="">
+                  <h5 class="text mt-3">React</h5>
+                  <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+                  <a href="#" class="alink-react">Link text <i class="fa-solid fa-arrow-right arrow-move"></i></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="rounded-3 bg-warningg p-3 mb-3">
+                  <img src="html5.png" width="50" class="img-fluid" alt="">
+                  <h4 class="text mt-3">Figma UI Design</h4>
+                  <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+                  <a href="#" class="alink-react text-warning">Link text <i class="fa-solid fa-arrow-right arrow-move"></i></a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="rounded-3 bg-successs p-3 mb-3">
+                  <img src="React.png" width="50" class="img-fluid" alt="">
+                  <h4 class="text mt-3">Node.js</h4>
+                  <p>Nulla vitae elit libero, a pharetra auguc id elit non mi porta gravida</p>
+                  <a href="#" class="alink-nodejs">Link text <i class="fa-solid fa-arrow-right arrow-move"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- About me  -->
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="text-center">
+        <h6 class="text text-muted fw-bold">ABOUT ME</h6>
+        <h2 class="bold">Hey, I'm Lee. Most folks know<br> me as <span class="h3volo">leerob</span> online.</h2>
+      </div>
+
+      <div class="row p-3">
+        <div class="col-lg col-md-12">
+          <p class="">I'm currently the VP of Developer Experience at Vercel, where I lead our Developer Relations and Documentation teams. I focus on educating and growing the Vercel and Next.js communities.</p>
+        </div>
+
+        <div class="col-lg col-md-12">
+          <p class="">I love building for the web. From something as simple as a single HTML file – all the way to large Next.js applications. The web is incredible.</p>
+        </div>
+      </div>
+
+      <div class="text-center mt-3 mb-5">
+        <button class="btn primary">More about me</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- process -->
+  <section>
+    <div class="container mt-4">
+      <div class="row mt-5 p-4">
+        <div class="col-lg-3 col-md-12">
+          <h3 class="text fw-bold fs-2">My process of Engagement</h3>
+          <p class="mt-4 font-text">Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Fusce dapibus, tellus ac cursus. Aenean eu leo quam.</p>
+        </div>
+
+        <div class="col">
+          <div class="row g-4">
+            <!-- Four Columns Inside Right Column -->
+            <div class="col-md-6">
+              <div class="feature ">
+                <div class="feature-icon  bg-gradient">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                  <i class="fa-solid fa-lightbulb fs-1 p-2 primaw text-warning rounded-3"  width="1em" height="1em"></i>
+                </div>
+                <h3 class="bold writing">Ideation</h3>
+                <p class=" mt-2">We craft a plan aligned with your business objectives, submit a comprehensive proposal.</p>
+                <!-- <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature ">
+                <div class="feature-icon  bg-gradient ">
+                  <svg class="bi fs-1 p-2 primar bg-warning rounded-3 " width="1.5em" height="1.5em"><use xlink:href="#tools"/></svg>
+                </div>
+                <h3 class="bold writing">Design</h3>
+                <p class=" mt-2">We design the Idea in Figma and seek approval. We offer 2 free design iterations.</p>
+                <!-- <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <div class="col-md-6 ">
+              <div class="feature ">
+                <div class="feature-icon bg-gradient">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                  <i class="fa-solid fa-lightbulb fs-1 p-2 primar rounded-3"  width="1em" height="1em"></i>
+                </div>
+                <h3 class="bold writing">Development</h3>
+                <p class=" mt-2">Agile Development: Sprints, Milestones, and weekly Progress Tracking.</p>
+                <!-- <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a> -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="feature ">
+                <div class="feature-icon  bg-gradient">
+                  <!-- <svg class="bi" width="1em" height="1em"><use xlink:href="#collection"/></svg> -->
+                  <i class="fa-solid fa-lightbulb fs-1 p-2 primar rounded-3"  width="1em" height="1em"></i>
+                </div>
+                <h3 class="bold writing">Delivery</h3>
+                <p class=" mt-2">Complete Project Delivery with Complimentary One Month Maintenance.</p>
+                <!-- <a href="#" class="icon-link">
+                  Call to action
+                  <svg class="bi" width="1em" height="1em"><use xlink:href="#chevron-right"/></svg>
+                </a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIAL -->
+  <section>
+    <div class="" style="background-color: #c4bbdfc7 "> 
+      <div class="container p-3">
+        <div class="row mb-4 p-3 pb-0 mt-5">
+          <div class="col-lg col-md-12">
+            <P>TESTIMONIAL</P>
+            <h3>
+              I am proud of <span class="h3volo fs-3">my results</span></h3>
+              <p>I bring solutions to make life easier for our customers.</p>
+          </div>
+  
+          <div class="col">
+            <div class="row g-3">
+              <div class="col">
+                <h2 class="h3volo fw-bold fs-2">236</h2>
+                <h6>Award Won</h6>
+              </div>
+  
+              <div class="col">
+                <h2 class="h3volo fw-bold fs-2">200+</h2>
+                <h6>Completed Projects</h6>
+              </div>
+  
+              <div class="col">
+                <h2 class="h3volo fw-bold fs-2">10Y</h2>
+                <p>Customer Satisfaction</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- testimonial -->
+        <div class="row  g-3 p-4 pt-2">
+          <div class="col-lg col-md-12  bg-white rounded-3 shadow p-3  me-4">
+            <h5>“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</h5>
+            <h6 class="bold fs-6">Jitu Chauhan</h6>
+            <p>Creative Director - Design agency</p>
+          </div>
+
+          <div class="col-lg col-md-12  bg-white rounded-3 shadow p-3  me-4">
+            <h5>“Dolorum et ut quod quia laborum quis quam oluptas numquam delectus nihil ultrices diam ut enim doloremque et ipsam.”</h5>
+            <h6 class="bold fs-6">Anita Parmar</h6>
+            <p>Sales Specialist</p>
+          </div>
+
+          <div class="col-lg col-md-12  bg-white rounded-3 shadow p-3  me-4">
+            <h5 class="fs-5">“Suspendisse facilisis leo at sapien finibus rutrum. Vivamus consectetur viverra erat. Nullam pretium mauris quis ultricies ultrices.”</h5>
+            <h6 class="bold fs-6">Sandeep Chauhan</h6>
+            <p>Marketing Specialist</p>
+          </div>
+
+          <div class="col-lg col-md-12  bg-white rounded-3 shadow p-3  me-4">
+            <h5  class="fs-5">“Laborum quis quam. Dolorum et ut quod quia. Voluptas numquam delectus nihil. Aut enim doloremque et ipsam.”</h5>
+            <h6 class="bold fs-6">Jitu Chauhan</h6>
+            <p>Creative Director - Design agency</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- BRANDS I HELPED -->
+  <section>
+    <div class="container mt-5">
+      <div class="text-center">
+        <p class="tex fw-bold">BRANDS I HELPED</p>
+
+        <div class="row g-3 p-5">
+          <div class="col">
+            <h3>Microsoft</h3>
+          </div>
+
+          <div class="col">
+            <h3>Office</h3>
+          </div>
+
+          <div class="col">
+            <h3>Linked</h3>
+          </div>
+
+          <div class="col">
+            <h3>Google</h3>
+          </div>
+
+          <div class="col">
+            <h3>Facebook</h3>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Form -->
+  <section>
+    <div class="container ">
+      <div class="row p-lg-5 p-3 g-4">
+        
+        <div class="col order-lg-2">
+          <div class="p-3 p-lg-5 ms-lg-5 ms-md-0 mt-lg-5 mt-md-0">
+            <img src="container.png" width="100" height="100" class="rounded-circle" alt="">
+            <h3 class="fw-bold text-dark mt-2">John Carter</h3>
+            <p>Head of Engineering at Google</p>
+
+            <div class="row">
+              <div class="row mt-3">
+                <div class="col-1">
+                  <i class="fa fa-location"></i>
+                </div>
+
+                <div class="col-11">
+                  <p class="fw-bold mb-1 text mt-0">Address:</p>
+                  <p>1802 Ruckman RoadOklahoma City, OK 73116</p>
+                </div>
+
+                <div class="col-1 mt-3">
+                  <i class="fa fa-phone"></i>
+                </div>
+
+                <div class="col-11 mt-3">
+                  <p class="fw-bold mb-1 text mt-0">Phone:</p>
+                  <p>00 (123) 456 78 90 <span class="ms-2">00 (987) 654 32 10</span></p>
+                </div>
+
+                <div class="col-1 mt-3">
+                  <i class="fa fa-message"></i>
+                </div>
+
+                <div class="col-11 mt-3">
+                  <p class="fw-bold mb-1 text mt-0">E-mail:</p>
+                  <p><span><a href="mailto:cyrilnnamsi@gmail.com" class="mailto">Cyrilnnamsi@gmail.com</a></span> <span><a href="mailto:Ace@gmail.com" class="mailto ms-2">Ace@gmail.com</a></span></p>
+                </div>
+
+                <div class=" ">
+                  <!-- <div class="col-lg-2 col-md-3 mt-2 bg-warning"> -->
+                    <button class="btn btn-color rounded-3 shadow"><i class="fa fa-solid fa-instagram"></i></button>
+                  <!-- </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 mt-2"> -->
+                    <button class="btn btn-color btn-colort rounded-3 shadow"><i class="fa fa-solid fa-twitter"></i></button>
+                  <!-- </div> -->
+                  <!-- <div class="col-lg-2 col-md-3 mt-2"> -->
+                    <button class="btn btn-colory btn-color rounded-3 shadow"><i class="fa fa-solid fa-youtube"></i></button>
+                  <!-- </div> -->
+                  <!-- <div class="col-lg-2 col-md-2 mt-2"> -->
+                    <button class="btn btn-color btn-colorl rounded-3 shadow"><i class="fa fa-solid fa-linkedin"></i></button>
+                  <!-- </div> -->
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5 order-lg-1 col-md-12 rounded-3 shadow p-5"  style="background-color: #c5b6eecb ">
+          <div>
+            <h3 class="text fw-bold">Interested in working together? Let’s talk. Just Say Hi!</h3>
+
+            <form action="" class="mt-4">
+              <label for="">What's your name</label>
+              <input type="text" placeholder="Name" class="form-control mt-2 mb-3">
+
+              <label for="">Email Address</label>
+              <input type="email" placeholder="Email" class="form-control mt-2 mb-3">
+
+              <label for="">Describe your project</label>
+              <textarea name="" id="" cols="30" rows="4" class="textarea form-control mt-2" placeholder="Describe your project"></textarea>
+
+              <button class="btn primary mt-3">Contact me</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <section >
+    <div class="container mt-5 ">
+      <hr>
+      <footer class="footer">
+        <div>
+          <div class="row p-4">
+            <div class="col-5">
+              <h3 class="fw-bold text mt-0">TAGIX.</h3>
+              <p>Build faster websites with Block multipurpose bootstrap 5 template. Duis imper diet mollis leo, quis ultrices erat ultrices simple dummy .</p>
+              <h5 class="mt-2 tex">Subscribe to our Newsletter</h5>
+              <form action="">
+                <input type="text" placeholder="Email" class="form-control">
+                <button class="btn btn-color mt-2 float-end">Subscribe</button>
+              </form>
+            </div>
+
+            <div class="col-1">
+
+            </div>
+
+            <div class="col">
+              <div class="row">
+
+                <div class="col">
+                  <p class="fw-bold text">Landings</p>
+
+                  <div class="d-block">
+                  <a href="" class="link"><p class="fw-bold tex">Landing 1</p></a>
+                  <a href="" class="link"><p class="fw-bold tex">Landing 2</p></a>
+                  <a href="" class="link"><p class="fw-bold tex">Landing 3</p></a>
+                  <a href="" class="link"><p class="fw-bold tex">Landing 4</p></a>
+                  </div>
+                </div>
+
+                <div class="col">
+                  <p class="fw-bold text">Accounting</p>
+
+                  <div class="d-block">
+                    <a href="" class="link"><p class="fw-bold tex">Landing 1</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 2</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 3</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 4</p></a>
+                    </div>
+
+                </div>
+
+                <div class="col">
+                  <p class="fw-bold text">Portfolio</p>
+
+                  <div class="d-block">
+                    <a href="" class="link"><p class="fw-bold tex">Landing 1</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 2</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 3</p></a>
+                    <a href="" class="link"><p class="fw-bold tex">Landing 4</p></a>
+                    </div>
+
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </section>
+</body>
+</html>
